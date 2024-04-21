@@ -1,8 +1,14 @@
+/* Ink Friendly */
+*:is(.page,.monster,.note,.descriptive) {
+	background : white !important;
+	filter : drop-shadow(0px 0px 3px #888) !important;
+}
+
 /* A4 Page Size */
 .page{
 	width  : 210mm;
 	height : 296.8mm;
-  padding: 10mm;
+  padding: 8mm 10mm;
 }
 
 .page:after {
@@ -409,7 +415,6 @@ br {
 }
 .page .monster p{
     margin:0;
-    background-color:#e8e6d4;
     font-family:Asul;
     font-size:100%;
     padding:0.25em 0.6em;
@@ -436,10 +441,13 @@ br {
     -webkit-text-stroke-width:0;
 }
 .page .monster table tbody tr{
-	background-color:#e8e6d4;
+	background-color:#70774f;
+  color:#fff;
 }
 .page .monster>table th{
-	background-color:#4e5c2e;
+	background-color:#70774f;
+  color:#fff;
+  
 }
 .page .monster .block table th{
 	background-color:#cdcbb5;
@@ -449,8 +457,7 @@ br {
 	padding-bottom:0;
 }
 .page .monster>table tbody tr:first-child{
-	background-color:#4e5c2e;
-	color:#fff;
+	background-color:#70774f;
 }
 .page .monster>table tbody tr:first-child td{
 	padding-top:0;
@@ -495,6 +502,24 @@ br {
 .page .monster .tail table:first-child tbody tr:first-child td{
     padding-top:0.25em;
     padding-bottom:0;
+}
+
+.page .monster h3 {
+  color:#70774f;
+}
+
+.page .monster hr~:is(dl,p) {
+    color:#000;
+}
+
+.page .monster hr {
+    height: 6px;
+    margin: .12cm 0;
+    visibility: visible;
+    background-image: url(/assets/redTriangle.png);
+    background-size: 100% 100%;
+    border: none;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(8%) saturate(1555%) hue-rotate(30deg) brightness(90%) contrast(85%);
 }
 
 /*----------*/
@@ -682,3 +707,4 @@ br {
     margin-top:3000px;
     
 }
+
