@@ -1,2 +1,2 @@
-# trpg-2023-202X
-TRPG Campaign - 5e - 2023-202X
+# trpg-2023-2024
+TRPG Campaign - 5e - 2023-2024
